@@ -1,0 +1,28 @@
+class Robot:
+    def __init__(self, posiX=0 , posiY=0):
+        self.posiX = posiX
+        self.posiY = posiY
+
+    def left(self):
+        self.posiX -= 1
+
+    def right(self):
+        self.posiX += 1
+
+    def up(self):
+        self.posiY += 1
+
+    def down(self):
+        self.posiY -= 1
+
+    def position(self):
+        print(f"Posiçao atual:({self.posiX},{self.posiY})") 
+
+robot = Robot()
+robot.position()
+robot.up()
+robot.right()
+robot.position()
+
+robot2 = Robot(5,7)
+robot2.position()
